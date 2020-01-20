@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: $primary-black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 80%;
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  width: 85%;
+  height: 100%;
+  position: relative;
+}
+
+@mixin globals--sm() {
+  html {
+    font-size: 45%;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+  }
+}

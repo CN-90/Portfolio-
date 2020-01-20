@@ -1,0 +1,107 @@
+@mixin sidenav--sm() {
+  .sidenav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    height: 75px;
+
+    .menu {
+      display: none;
+    }
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    color: $white;
+    font-size: 4.5rem;
+    margin-top: 2rem;
+    position: relative;
+
+    #c {
+      position: relative;
+      left: 3px;
+    }
+
+    #r {
+      position: relative;
+      right: 3px;
+      top: 10px;
+    }
+
+    .bracket {
+      color: $secondary-green;
+    }
+  }
+
+  .sidebar {
+    position: absolute;
+    left: 0;
+    height: 85%;
+    width: 2px;
+    top: 100px;
+    background: $dark-grey;
+  }
+
+  .menu {
+    padding-top: 5rem;
+
+    .active {
+      color: $white;
+    }
+
+    .nav-option {
+      cursor: pointer;
+    }
+
+    .circle {
+      position: relative;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background: $white;
+      align-self: center;
+      z-index: 5;
+      right: 1px;
+    }
+
+    .line {
+      background: $primary-green;
+      width: 0px;
+      height: 1px;
+      align-self: center;
+      margin-left: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    li {
+      list-style: none;
+      color: $inactive-grey;
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+    }
+  }
+
+  .projects {
+    padding-top: 1rem;
+    position: absolute;
+    left: 30px;
+
+    .project {
+      opacity: 0;
+      font-size: 1.7rem;
+      cursor: pointer;
+    }
+
+    .active-project {
+      color: #a9dd7e;
+    }
+  }
+}

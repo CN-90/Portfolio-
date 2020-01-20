@@ -1,0 +1,64 @@
+@mixin home--sm() {
+  .home {
+    .textbox {
+      margin-left: 0rem;
+      text-align: center;
+    }
+
+    .codebox {
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    button {
+      width: 50%;
+    }
+  }
+}
+
+.home {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .textbox {
+    margin-left: 5rem;
+    .main-header {
+      font-size: 9rem;
+      width: 100%;
+      line-height: 0.9;
+      color: $white;
+
+      span {
+        font-size: 11rem;
+      }
+    }
+  }
+
+  button {
+    background: #c4c4c4;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    width: 25%;
+    font-size: 2.4rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .codebox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 25%;
+    color: #252525;
+    font-size: 4vh;
+    overflow: hidden;
+    z-index: -2;
+  }
+}
